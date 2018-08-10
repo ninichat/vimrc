@@ -33,13 +33,13 @@ set smartcase
 
 " Highlight search results, display while being written
 set hlsearch
-set incsearch 
+set incsearch
 
 " If changed outside vim, re-read
 set autoread
 
 " Show matching brackets on cursor, blink 2 tenths of seconds
-set showmatch 
+set showmatch
 set mat=2
 
 " Add one column margin on the left
@@ -53,7 +53,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 " Colors and fonts
 " ===================
 
-syntax enable 
+syntax enable
 colorscheme peaksea
 set background=dark
 
@@ -92,7 +92,6 @@ if exists("yankstack_yank_keys")
 endif
 
 " Disable highlight - using leader + CR or ESC
-nnoremap <esc> :noh<return><esc>
 map <silent> <leader><cr> :noh<cr>
 
 " Visual mode => * / # searches pattern
@@ -198,7 +197,7 @@ endif
 vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
 
 " Open Ack and put the cursor in the right position
-map <leader>g :Ack 
+map <leader>g :Ack
 
 " When you press <leader>r you can search and replace the selected text
 vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
@@ -224,7 +223,7 @@ map <leader>p :cp<cr>
 " =========================
 
 " don't redraw while executing scripts
-set lazyredraw 
+set lazyredraw
 set complete-=i
 
 "===================
@@ -242,7 +241,7 @@ fun! CleanTrailingSpaces()
     silent! %s/\s\+$//e
     call setpos('.', save_cursor)
     call setreg('/', old_query)
-endfun   
+endfun
 
 autocmd BufWritePre * :call CleanTrailingSpaces()
 
@@ -263,7 +262,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 function! CmdLine(str)
     call feedkeys(":" . a:str)
-endfunction 
+endfunction
 
 function! VisualSelection(direction, extra_filter) range
     let l:saved_reg = @"
