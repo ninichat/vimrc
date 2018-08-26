@@ -25,7 +25,7 @@ set magic
 
 " Ignore unsaved changes when switching buffers
 set hidden
-set backspace=start,indent
+set backspace=start,indent,eol
 
 " Ignore case, when there is no uppercase
 set ignorecase
@@ -77,7 +77,7 @@ set smartindent
 
 set foldmethod=indent
 set foldnestmax=3
-set foldenable
+set nofoldenable
 
 " Behavior on switching buffers
 set switchbuf=useopen,usetab,newtab

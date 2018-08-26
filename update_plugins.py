@@ -24,7 +24,7 @@ nerdtree https://github.com/scrooloose/nerdtree
 MOTION_PLUGINS = """
 auto-pairs https://github.com/jiangmiao/auto-pairs
 comfortable-motion.vim https://github.com/yuttie/comfortable-motion.vim
-tabular https://github.com/rust-lang/rust.vim
+tabular https://github.com/godlygeek/tabular
 vim-commentary https://github.com/tpope/vim-commentary
 vim-expand-region https://github.com/terryma/vim-expand-region
 vim-indent-object https://github.com/michaeljsmith/vim-indent-object
