@@ -20,6 +20,9 @@ set ruler
 set cmdheight=2
 set showcmd
 
+" Don't put a double space when joining
+set nojoinspaces
+
 " Grep-like regexes
 set magic
 
